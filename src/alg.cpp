@@ -36,7 +36,7 @@ int index = 0;
 int mid;
 
 for (int i = 0; i < len-1; i++) {
-int prim = 0; 
+int prim = 0;
 left = i + 1;
 mid = (left + right) / 2;
 while (left <= right) {
@@ -45,8 +45,8 @@ count++;
 prim = 1;
 break;
 }
-if (arr[mid]+arr[i] > value) right = mid - 1;
-else left = mid + 1;
+if (arr[mid]+arr[i] > value) { right = mid - 1; 
+} else{ left = mid + 1; }
 mid = (left + right) / 2;
 }
 if (prim) {
