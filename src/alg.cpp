@@ -45,8 +45,8 @@ count++;
 prim = 1;
 break;
 }
-if (arr[mid]+arr[i] > value) { right = mid - 1; 
-} else{ left = mid + 1; }
+if (arr[mid]+arr[i] > value) { right = mid - 1;
+} else { left = mid + 1; }
 mid = (left + right) / 2;
 }
 if (prim) {
