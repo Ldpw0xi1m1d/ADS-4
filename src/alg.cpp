@@ -13,7 +13,6 @@ return count;
 return 0;
 }
 
-
 int countPairs2(int* arr, int len, int value) {
 int count = 0;
 
@@ -48,8 +47,7 @@ break;
 }
 if (arr[mid] + arr[i] > value) {
 right = mid - 1;
-}
-else { left = mid + 1; }
+} else { left = mid + 1; }
 mid = (left + right) / 2;
 }
 if (prim) {
